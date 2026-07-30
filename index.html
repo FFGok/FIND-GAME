@@ -1,1 +1,263 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>FIND GAME</title><link rel="icon" href="find-game.png"><link rel="stylesheet" href="style.css"></head><body><main><header><b>🎮 FIND GAME</b><button id="randomBtn">SURPRISE ME</button></header><section class="hero"><h1>What should I play?</h1><p>Discover games from the RAWG database.</p></section><form id="finderForm"><input id="search" placeholder="Search a game..."><select id="genre"><option value="">Any genre</option><option value="action">Action</option><option value="adventure">Adventure</option><option value="role-playing-games-rpg">RPG</option><option value="shooter">Shooter</option><option value="racing">Racing</option><option value="strategy">Strategy</option><option value="indie">Indie</option></select><select id="platform"><option value="">Any platform</option><option value="4">PC</option><option value="187">PS5</option><option value="18">PS4</option><option value="186">Xbox Series S/X</option><option value="7">Nintendo Switch</option></select><button>FIND GAMES</button></form><p id="status">Ready.</p><section id="games"></section></main><script src="app.js"></script></body></html>
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  >
+
+  <meta
+    name="theme-color"
+    content="#08090c"
+  >
+
+  <title>FIND GAME</title>
+
+  <link
+    rel="icon"
+    type="image/png"
+    href="find-game.png"
+  >
+
+  <link
+    rel="stylesheet"
+    href="style.css"
+  >
+</head>
+
+<body>
+
+  <main class="app">
+
+    <!-- TOP BAR -->
+
+    <header class="topbar">
+
+      <div class="brand">
+
+        <img
+          src="find-game.png"
+          alt="FIND GAME Logo"
+          class="brand-logo"
+        >
+
+        <div class="brand-text">
+          <strong>FIND GAME</strong>
+          <span>Find your next game</span>
+        </div>
+
+      </div>
+
+      <button
+        id="randomBtn"
+        class="surprise-button"
+        type="button"
+      >
+        SURPRISE ME
+      </button>
+
+    </header>
+
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+      <div class="eyebrow">
+        GAME DISCOVERY
+      </div>
+
+      <h1>
+        What should I play?
+      </h1>
+
+      <p>
+        Choose what you want and discover your next game.
+      </p>
+
+    </section>
+
+
+    <!-- FINDER -->
+
+    <section class="finder-panel">
+
+      <form id="finderForm">
+
+        <div class="field search-field">
+
+          <label for="search">
+            SEARCH
+          </label>
+
+          <input
+            id="search"
+            type="search"
+            placeholder="Minecraft, racing, horror..."
+            autocomplete="off"
+          >
+
+        </div>
+
+
+        <div class="field">
+
+          <label for="genre">
+            GENRE
+          </label>
+
+          <select id="genre">
+
+            <option value="">
+              Any genre
+            </option>
+
+            <option value="action">
+              Action
+            </option>
+
+            <option value="adventure">
+              Adventure
+            </option>
+
+            <option value="role-playing-games-rpg">
+              RPG
+            </option>
+
+            <option value="shooter">
+              Shooter
+            </option>
+
+            <option value="strategy">
+              Strategy
+            </option>
+
+            <option value="sports">
+              Sports
+            </option>
+
+            <option value="racing">
+              Racing
+            </option>
+
+            <option value="puzzle">
+              Puzzle
+            </option>
+
+            <option value="simulation">
+              Simulation
+            </option>
+
+            <option value="indie">
+              Indie
+            </option>
+
+          </select>
+
+        </div>
+
+
+        <div class="field">
+
+          <label for="platform">
+            PLATFORM
+          </label>
+
+          <select id="platform">
+
+            <option value="">
+              Any platform
+            </option>
+
+            <option value="4">
+              PC
+            </option>
+
+            <option value="187">
+              PlayStation 5
+            </option>
+
+            <option value="18">
+              PlayStation 4
+            </option>
+
+            <option value="186">
+              Xbox Series S/X
+            </option>
+
+            <option value="1">
+              Xbox One
+            </option>
+
+            <option value="7">
+              Nintendo Switch
+            </option>
+
+            <option value="3">
+              iOS
+            </option>
+
+            <option value="21">
+              Android
+            </option>
+
+          </select>
+
+        </div>
+
+
+        <button
+          type="submit"
+          class="find-button"
+        >
+          FIND GAMES
+        </button>
+
+      </form>
+
+    </section>
+
+
+    <!-- STATUS -->
+
+    <div
+      id="status"
+      class="status"
+    >
+      Ready to find your next game.
+    </div>
+
+
+    <!-- GAME RESULTS -->
+
+    <section
+      id="games"
+      class="games"
+    ></section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+      <div>
+        FIND GAME
+      </div>
+
+      <span>
+        Game data powered by RAWG
+      </span>
+
+    </footer>
+
+  </main>
+
+
+  <script src="app.js"></script>
+
+</body>
+
+</html>
